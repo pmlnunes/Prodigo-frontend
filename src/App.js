@@ -9,7 +9,7 @@ function App() {
   const [data, setData] = React.useState(null);
 
   const handleClick = async() => {
-    fetch("http://localhost:3001/")
+    fetch("https://pro-di-go.herokuapp.com/")
     .then((res) => res.json())
     .then((data) => {
       setData(data.message)
